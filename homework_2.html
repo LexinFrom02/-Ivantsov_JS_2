@@ -10,76 +10,78 @@
 
 <body>
     <script>
-        // Ex 1.1
-        "use strict";
-        let login, pass;
-        login = "admin";
-        pass = "password";
-        if (login == "admin", pass == "password") {
-            alert("Success");
-            console.log("Success")
-        } else {
-            alert("Error");
-            console.log("Error")
-        }
+        // // Ex 1.1
+        // "use strict";
+        // let login, pass;
+        // login = "admin";
+        // pass = "password";
+        // if (login == "admin", pass == "password") {
+        //     alert("Success");
+        //     console.log("Success")
+        // } else {
+        //     alert("Error");
+        //     console.log("Error")
+        // }
 
-        // Ex 1.2
-        let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9], odd = [], even = [];
-        for (let i = 0; i < arrOfNumbers.length; i++) {
-            if (arrOfNumbers[i] % 2 != 0) {
-                odd.push(arrOfNumbers[i]);
-            } else {
-                even.push(arrOfNumbers[i])
-            }
-        }
-        console.log('Нечетные значения - ' + odd);
-        console.log('Четные значения - ' + even);
+        // // Ex 1.2
+        // let arrOfNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9], odd = [], even = [];
+        // for (let i = 0; i < arrOfNumbers.length; i++) {
+        //     if (arrOfNumbers[i] % 2 != 0) {
+        //         odd.push(arrOfNumbers[i]);
+        //     } else {
+        //         even.push(arrOfNumbers[i])
+        //     }
+        // }
+        // console.log('Нечетные значения - ' + odd);
+        // console.log('Четные значения - ' + even);
 
-        // // Ex 1.3
-        let movie = prompt("Ваш любимый фильм? \n 1 – Гарри Поттер \n 2 – Властелин колец \n 3 – Агент 007 \n 4 – Агент национальной безопасности \n 5 – Не люблю фильмы", "Введите цифру");
-        switch (movie) {
-            case "1":
-                document.write("&#10112 Вам не понаслышке известно, чем опасна 'Авада Кедавра', Ваш любимый фильм - 'Гарри Поттер'");
-                break;
-            case "2":
-                document.write("&#10113 Голум-голум, Ваш любимый фильм - 'Властелин колец'");
-                break;
-            case "3":
-                document.write("&#10114 Да, это Бонд, но не сигареты, Ваш любимый фильм - 'Агент 007'");
-                break;
-            case "4":
-                document.write("&#10115 Наша служба и опасна и трудна..., Ваш любимый фильм - 'Агент национальной безопасности'");
-                break;
-            case "5":
-                document.write("&#10116 Вы не любите фильмы. Возможно Вам больше по душе мультфильмы или книги");
-                break;
-            default:
-                document.write("&#10060 Вы ввели неверное значение");
-                break;
-        }
+        // // // Ex 1.3
+        // let movie = prompt("Ваш любимый фильм? \n 1 – Гарри Поттер \n 2 – Властелин колец \n 3 – Агент 007 \n 4 – Агент национальной безопасности \n 5 – Не люблю фильмы", "Введите цифру");
+        // switch (movie) {
+        //     case "1":
+        //         document.write("&#10112 Вам не понаслышке известно, чем опасна 'Авада Кедавра', Ваш любимый фильм - 'Гарри Поттер'");
+        //         break;
+        //     case "2":
+        //         document.write("&#10113 Голум-голум, Ваш любимый фильм - 'Властелин колец'");
+        //         break;
+        //     case "3":
+        //         document.write("&#10114 Да, это Бонд, но не сигареты, Ваш любимый фильм - 'Агент 007'");
+        //         break;
+        //     case "4":
+        //         document.write("&#10115 Наша служба и опасна и трудна..., Ваш любимый фильм - 'Агент национальной безопасности'");
+        //         break;
+        //     case "5":
+        //         document.write("&#10116 Вы не любите фильмы. Возможно Вам больше по душе мультфильмы или книги");
+        //         break;
+        //     default:
+        //         document.write("&#10060 Вы ввели неверное значение");
+        //         break;
+        // }
 
-        // // Ex 1.4. Т.к. требуемое название массива уже используется, добавим к названию индекс 2.
-        let  arrOfNumbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-        let tmp = prompt('Введите значение, на которое хотите умножить массив', 'К, примеру: 10');
-        let tmpNumber = parseInt(tmp, 10);
-        let i1 = 0;
-        while (i1 < arrOfNumbers2.length) {
-            arrOfNumbers2[i1] = arrOfNumbers2[i1] * tmpNumber;
-            i1++;
-        }
-        console.log('Массив, перемноженный на ' + tmp + " - " + arrOfNumbers2);
+        // // // Ex 1.4. Т.к. требуемое название массива уже используется, добавим к названию индекс 2.
+        // let  arrOfNumbers2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        // let tmp = prompt('Введите значение, на которое хотите умножить массив', 'К, примеру: 10');
+        // let tmpNumber = parseInt(tmp, 10);
+        // let i1 = 0;
+        // while (i1 < arrOfNumbers2.length) {
+        //     arrOfNumbers2[i1] = arrOfNumbers2[i1] * tmpNumber;
+        //     i1++;
+        // }
+        // console.log('Массив, перемноженный на ' + tmp + " - " + arrOfNumbers2);
 
         // Ex 1.5
         let beforeArr = [], afterArr = [];
         let i2 = 0;
         let j = 0;
         do {
-            beforeArr.push(i2);
-            ++i2;
-            afterArr.push(j);
-            j++;
+            beforeArr.push(++i2);
+            afterArr.push(j++);
         } while (i2 != 5 || j != 5);
         console.log('Префиксный - ' + beforeArr + '; Постфиксный - ' + afterArr);
+
+        // Задание 4 из первого урока
+        let a = 3, b = 5;
+        console.log(`3 + 5 = ${a + b}`);
     </script>
 
 </body>
